@@ -58,5 +58,13 @@ Test results are generated in `target/surefire-reports/`.
 
 - **Separation of concerns** — test data lives in `PostTestData.java`, keeping test methods clean and readable
 - **Shared base config** — `BaseApiTest` sets up the `RequestSpecification` once per suite via `@BeforeSuite`
+
+## Why This Project?
+
+This project demonstrates:
+- API automation using industry-standard tools (RestAssured + TestNG)
+- Clean code practices (separation of concerns, DRY principle)
+- CRUD operation testing (GET, POST, PUT, DELETE)
+- CI/CD readiness (Maven, TestNG XML, GitHub Actions config)
 - **Independent tests** — no shared mutable state between tests; each test is self-contained
 - **Descriptive naming** — test methods follow the `methodUnderTest_shouldExpectedBehaviour` convention
